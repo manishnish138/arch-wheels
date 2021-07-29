@@ -27,6 +27,7 @@ jobs:
             platform: aarch64
             PLAT: aarch64
             python-version: 3.7
+            MB_ML_VER: 2014
     env:
       REPO_DIR: arch
       PKG_NAME: arch
