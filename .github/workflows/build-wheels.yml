@@ -55,6 +55,9 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: ${{ matrix.python-version }}
+    - uses: docker/setup-qemu-action@v1
+      if: ${{ matrix.platform == 'aarch64' }}
+      name: Set up QEMU
     - name: Pin Numpy, Scipy and Pandas version
       run: |
         if [[ $TRAVIS_PYTHON_VERSION == "3.7" ]]; then
