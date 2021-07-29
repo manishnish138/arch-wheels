@@ -26,6 +26,7 @@ jobs:
           - os: ubuntu-latest
             platform: aarch64
             PLAT: aarch64
+            python-version: 3.7
     env:
       REPO_DIR: arch
       PKG_NAME: arch
